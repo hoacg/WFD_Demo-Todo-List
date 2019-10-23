@@ -1,0 +1,9 @@
+<div class="alert alert-primary" role="alert">
+
+  <p [ngClass]="todo.complete === true ? 'done' : '' ">
+
+    <input type="checkbox" [(ngModel)]="todo.complete">
+
+    {{ todo.text }}
+  </p>
+</div>
